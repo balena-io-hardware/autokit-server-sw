@@ -1,6 +1,5 @@
 {
   "include": [
-    "./lib/flashing/devices/*.json",
     "./lib"
   ],
   "compilerOptions": {
