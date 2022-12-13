@@ -1,6 +1,6 @@
 {
   "name": "@balena/autokit-worker-sw",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Autokit HTTP server and web interface",
   "main": "build/index.js",
   "files": [
@@ -9,7 +9,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified, skipping\" && exit 0",
     "build": "npx tsc",
-    "format": "npx balena-lint --fix lib/"
+    "format": "npx balena-lint --fix lib/",
+    "docs": "rimraf ./docs/ && npx apidoc -i lib/ -o docs/"
   },
   "engines": {
     "node": ">=10.0.0 < 16"
@@ -38,6 +39,16 @@
   },
   "devDependencies": {
     "@balena/lint": "^6.2.1",
-    "@types/express": "^4.17.14"
+    "@types/apidoc": "^0.50.0",
+    "@types/express": "^4.17.14",
+    "apidoc": "^0.53.1",
+    "rimraf": "^3.0.2"
+  },
+  "apidoc": {
+    "title": "Autokit Worker Docs",
+    "url": "https://balena-io-hardware.github.io/autokit-worker-sw/"
+  },
+  "versionist": {
+    "publishedAt": "2022-12-13T14:49:41.842Z"
   }
 }
