@@ -1,4 +1,4 @@
-name: autokit
+name: autokit-server
 type: sw.application
 description: >-
   Hands free, automated interaction with electronic hardware
@@ -14,7 +14,7 @@ assets:
   repository:
     type: blob.asset
     data:
-      url: 'https://github.com/balena-io-hardware/autokit-sw'
+      url: 'https://github.com/balena-io-hardware/autokit-server-sw'
   logo:
     type: blob.asset
     data:
@@ -27,4 +27,4 @@ data:
     - raspberrypi4-64
     - fincm3
     - intel-nuc
-version: 0.2.3
+version: 0.0.1

@@ -1,5 +1,5 @@
 {
-  "name": "@balena/autokit-worker-sw",
+  "name": "@balena/autokit-server",
   "version": "0.0.1",
   "description": "Autokit HTTP server and web interface",
   "main": "build/index.js",
