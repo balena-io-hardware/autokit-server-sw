@@ -1,0 +1,2 @@
+# Autokit USB Relay
+SUBSYSTEM=="hidraw", KERNEL=="hidraw*", ATTRS{idVendor}=="16c0", ATTRS{idProduct}=="05df", PROGRAM="/usr/app/scripts/udev_usbrelay", SYMLINK+="autokit/%c/usbRelay"

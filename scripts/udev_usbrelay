@@ -1,0 +1,10 @@
+#!/bin/sh
+
+env >> /usr/app/udev.log
+echo "\n\n\n\n" >> /usr/app/udev.log
+
+USB_LOCATION=$(echo $DEVPATH | awk -F '/' '{print $6}')
+
+/usr/app/scripts/udev_add_json $USB_LOCATION $ACTION usbRelay 
+
+echo $DEVPATH | awk -F '/' '{print $6}'

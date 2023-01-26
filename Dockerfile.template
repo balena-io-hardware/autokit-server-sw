@@ -11,7 +11,8 @@ RUN install_packages libusb-dev eudev-dev dbus-dev python3 make build-base git l
     bluez \
     python3 \
     py3-pip \
-    py3-setuptools 
+    py3-setuptools \
+    jq
 
   
 # hadolint ignore=DL3018
@@ -22,6 +23,8 @@ RUN npm ci
 
 COPY tsconfig.json ./
 COPY lib ./lib
+COPY static ./static
+COPY scripts ./scripts
 
 # build typescript
 RUN npm run build
@@ -32,6 +35,7 @@ ENV DBUS_SYSTEM_BUS_ADDRESS unix:path=/host/run/dbus/system_bus_socket
 # linux automation sd mux board requires this to be installed
 RUN pip3 install usbsdmux
 
+COPY ./udev/* /etc/udev/rules.d/
 COPY entry.sh entry.sh
 
 CMD ["./entry.sh"]
