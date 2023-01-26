@@ -1,0 +1,13 @@
+- commits:
+    - subject: Initial commit
+      hash: 8851e69fe5db8778f518006945de55ac4f17d85e
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Pedro Henrique Kopper <pedro.kopper@balena.io>
+        signed-off-by: Pedro Henrique Kopper <pedro.kopper@balena.io>
+      author: Pedro Henrique Kopper
+  version: 0.0.2
+  title: ""
+  date: 2023-01-26T18:10:38.266Z
