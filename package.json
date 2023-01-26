@@ -10,7 +10,8 @@
     "test": "echo \"Error: no test specified, skipping\" && exit 0",
     "build": "npx tsc",
     "format": "npx balena-lint --fix lib/",
-    "docs": "rimraf ./docs/ && npx apidoc -i lib/ -o docs/"
+    "docs": "rimraf ./docs/ && npx apidoc -i lib/ -o docs/",
+    "serve": "node ./build/index.js"
   },
   "engines": {
     "node": ">=10.0.0 < 16"
@@ -34,7 +35,6 @@
   "homepage": "https://github.com/balena-io-hardware/autokit-worker-sw#readme",
   "dependencies": {
     "express": "^4.18.2",
-    "tsc": "^2.0.4",
     "typescript": "^4.9.4"
   },
   "devDependencies": {
@@ -46,6 +46,6 @@
   },
   "apidoc": {
     "title": "Autokit Worker Docs",
-    "url" : "https://balena-io-hardware.github.io/autokit-worker-sw/"
+    "url": "https://balena-io-hardware.github.io/autokit-worker-sw/"
   }
 }

@@ -1,11 +1,13 @@
 import * as express from 'express';
+import * as path from 'path';
+
 import * as powerRoutes from './power';
 import * as networkRoutes from './network';
 import * as serialRoutes from './serial';
 import * as videoRoutes from './video';
 
 const app = express();
-const port = 3000;
+const port = 80;
 
 app.use(express.static('static'));
 
@@ -40,9 +42,9 @@ app.use('/api/video', videoRoutes.default);
  *     }
  */
 app.get('/', (req: express.Request, res: express.Response) => {
-	res.send('Hello World!');
+	res.sendFile(path.resolve(__dirname, '../static/index.html'));
 });
 
 app.listen(port, () => {
-	console.log(`Example app listening on port ${port}`);
+	console.log(`autokit-worker listening on port ${port}`);
 });
