@@ -1,4 +1,17 @@
 - commits:
+    - subject: Add udev removal support
+      hash: 93418052ae7ceeba5da25e75bf3152ebc5a3692d
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Pedro Henrique Kopper <pedro.kopper@balena.io>
+        signed-off-by: Pedro Henrique Kopper <pedro.kopper@balena.io>
+      author: Pedro Henrique Kopper
+  version: 0.0.3
+  title: ""
+  date: 2023-01-27T21:37:14.888Z
+- commits:
     - subject: Initial commit
       hash: 8851e69fe5db8778f518006945de55ac4f17d85e
       body: ""

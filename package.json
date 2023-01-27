@@ -1,6 +1,6 @@
 {
   "name": "@balena/autokit-server",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Autokit HTTP server and web interface",
   "main": "build/index.js",
   "files": [
@@ -49,6 +49,6 @@
     "url": "https://balena-io-hardware.github.io/autokit-worker-sw/"
   },
   "versionist": {
-    "publishedAt": "2023-01-26T18:10:38.319Z"
+    "publishedAt": "2023-01-27T21:37:14.940Z"
   }
 }
