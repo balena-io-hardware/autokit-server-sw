@@ -1,0 +1,7 @@
+#!/bin/sh
+
+USB_LOCATION=$(echo $DEVPATH | awk -F '/' '{print $6}')
+
+/usr/app/scripts/udev_add_json $USB_LOCATION $ACTION video 
+
+echo $DEVPATH | awk -F '/' '{print $6}'
